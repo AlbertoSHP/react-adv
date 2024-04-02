@@ -1,0 +1,68 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Alberto",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First Name is required"
+      },
+      {
+        "type": "minLength",
+        "value": 5,
+        "message": "First Name must be at least 5 characters"
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Sanchez",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Last Name is required"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "example@test.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Check email"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      { "id": 1, "label": "Zelda" },
+      { "id": 2, "label": "Mario" },
+      { "id": 3, "label": "Pokemon" },
+      { "id": 4, "label": "Donkey Kong" }
+    ],
+    "validations": [
+      {
+        "type": "required",
+        "message": "Favourite game is required"
+      }
+    ]
+  }
+]
